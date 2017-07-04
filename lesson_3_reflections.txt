@@ -1,1 +1,4 @@
-lesson 3 reflections
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+To limit updates to only logical changes.  To avoid contanimation of your branch with the incomplete code of collaborators.
+
+

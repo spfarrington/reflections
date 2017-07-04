@@ -16,9 +16,13 @@ change?
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
-
+Trying out new fetures and capabilities while maintaining a working copy of the code base, 
+or adding additional language versions you intend to eventually merge or make switchable,
+When you want to keep a public branch that always works and never breaks, create a new branch to 
+start adding a new feature, until debugged and fully functional, then merge with the master branch.
 
 How do the diagrams help you visualize the branch structure?
+They show you reachability.
 
 
 What is the result of merging two branches together? Why do we represent it in
@@ -28,9 +32,35 @@ the diagram the way we do?
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
 
+
+
 git init
 git add
 git status
 git commit
 staging area
 working directory
+
+Stuff moves using "git add" from working directory to staging area 
+Stuff moves using "git commit" from staging area to repository (commit 1)
+"git diff" compares working directory to staging area
+"git diff --staging" compares staging area to most recent commit (commit 1)
+"git diff commit 1 commit 2" compares commit 1 (most recent commit) to commit 2 (previous commit)
+
+BRANCHING
+the branch named "master" is the default branch 
+"git branch" shows all current branches
+"git branch <name>" creates a new branch
+"git checkout <name>" checks out a named branch
+you may have many branches that different people are working on (remotes)
+merge branches by using "git merge <subsumed branch> <persistent branch>"
+
+"git branch -d <branch name>" deletes a branch
+A branch is a label.  If you delete a branch before merging it, all of it's unique history will be irretreivable.
+If you delete a branch after merging it into the master, all it's commits will be retreivable from the master.
+All the commits will be sorted by timestamp, so they will appear interleaved and discontinuous in the history.
+
+Git diff compares two subsequent timestamped versions of commits.
+"git show" - To compare a commit to its actual parent (fromt he same branch) use git show.
+
+
