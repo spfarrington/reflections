@@ -1,0 +1,52 @@
+How did viewing a diff between two versions of a file help you see the 
+bug that was introduced?
+
+It elimiated the need to manually identify which lines had changed, thus 
+allowing me to focus my time on looking for errors only in the lines 
+that had changed.
+
+How could having easy access to the entire history of a file make you a 
+more efficient programmer in the long term?
+
+It would save a lot of time understanding what had happened when 
+changes destabilize a piece of code.  It can also help in 
+collaboration, to more quickly understand what others have changed.
+
+What do you think are the pros and cons of manually choosing when to create a 
+commit, like you do in Git, vs having versions automatically saved, like 
+Google Docs does?
+
+Cons: You can neglect to commit things that should have been committed, or 
+you can comomit too frequently when the changes are trivia.
+Pros: You don't get commits happening at logically arbitrary points where 
+changes might not be complete or which may be too large or too small. You 
+don't have stuff saved while you are still composing the changes.
+
+Why do you think some version control systems, like Git, allow saving multiple 
+files in one commit, while others, like Google Docs, treat each file 
+separately?
+
+Git is designed for programmers who may be working on several interrelated files 
+at once, whereas files in Google Docs are typically standalone and independent.
+
+How can you use the commands git log and git diff to view the history of files?
+
+Locate the comments and commit IDs associated with specific commits using git 
+log, and find specific changes using the commit IDs with git diff.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+Managing version control of some Matlab scripts I have been developing and 
+re-factoring for an R&D project.
+
+How might using version control make you more confident to make changes that 
+could break something?
+
+Knowing you can always revert to a previously committed state removes the fear 
+of breaking something unrecoverably.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+(1) Version control of my Matlab code for algorithm development, (2) version
+control of all software projects in my business, (3) possibly version control of 
+final reports and grant funding proposals.
